@@ -1,8 +1,6 @@
-use super::theme_example::theme_example_card;
+use crate::svg_icons::github_logo;
 use sauron::prelude::*;
 
-/// TODO: Move into section folder
-/// as a component
 pub fn nav_bar<T>() -> Node<T> {
     node! {
 
@@ -16,7 +14,11 @@ pub fn nav_bar<T>() -> Node<T> {
             <ul>
                 <li>"Examples"</li>
                 <li>"Docs"</li>
-                <li>{github_logo}</li>
+                <li>
+                    {github_logo(
+                        "https://github.com/deathbreakfast/saruron-pico-library".to_owned()
+                    )}
+                </li>
             </ul>
         </nav>
 

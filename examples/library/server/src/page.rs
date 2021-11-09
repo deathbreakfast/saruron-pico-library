@@ -1,8 +1,8 @@
 use super::theme_section::theme_section;
 use super::usage::usage_section;
 use client::{App, Msg};
-use components::{github_logo, NavEntry, NavGroup, Navigation, SauronComponent};
 use sauron::prelude::*;
+use sauron_pico_library::{github_logo, NavEntry, NavGroup, Navigation, SauronComponent};
 
 fn navigation() -> Navigation {
     let mut getting_started_group = NavGroup::new("Getting Started");

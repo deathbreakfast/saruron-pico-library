@@ -1,7 +1,7 @@
-[workspace]
+[package]
+name = "sauron-pico-library"
+version = "0.1.0"
+edition = "2018"
 
-members = [
-	"server",
-	"client",
-	"components",
-]
+[dependencies]
+sauron = "0.43.9"

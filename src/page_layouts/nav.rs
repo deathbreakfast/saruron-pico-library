@@ -1,6 +1,6 @@
 use sauron::prelude::*;
 
-use super::SauronComponent;
+use crate::SauronComponent;
 
 pub struct NavEntry {
     url: String,
